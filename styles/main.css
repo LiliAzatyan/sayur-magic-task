@@ -98,3 +98,115 @@ html {
   .text-for-cofee {
     margin-bottom: 40px;
   }
+
+
+
+
+
+
+
+
+
+
+
+  :root {
+    --main-green: #0C5E43;
+    --yellow: #FFD655;
+    --light-bg: #E2EEEE;
+    --dark-text: #222;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+  }
+  
+  .products-section {
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 3rem;
+    color: var(--main-green);
+    margin-bottom: 0.5rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 3rem;
+  }
+  
+  .product-list {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .product-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .product-name {
+    font-size: 1.4rem;
+    color: var(--main-green);
+    margin: 0.5rem 0;
+  }
+  
+  .product-desc {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .product-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-style: italic;
+    font-size: 1rem;
+  }
+  
+  .product-info span:first-child {
+    font-weight: 600;
+  }
+  
+  .product-price::before {
+    content: "$";
+    font-size: 0.8rem;
+    vertical-align: super;
+    margin-right: 2px;
+  }
+  
+  .order-btn {
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 20px;
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .order-btn:hover {
+    background-color: #ffc933;
+  }
+  
