@@ -54,3 +54,31 @@ window.addEventListener('scroll', () => {
     productList.appendChild(card);
   });
   
+  
+
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const reviews = document.querySelector('#reviews .reviews');
+    const leftBtn = document.querySelector('#reviews .left');
+    const rightBtn = document.querySelector('#reviews .right');
+  
+    let scrollAmount = 0;
+    const scrollStep = 270; // card width + gap
+  
+    leftBtn.addEventListener('click', () => {
+      scrollAmount -= scrollStep;
+      if (scrollAmount < 0) scrollAmount = 0;
+      reviews.style.transform = `translateX(-${scrollAmount}px)`;
+    });
+  
+    rightBtn.addEventListener('click', () => {
+      const maxScroll = reviews.scrollWidth - reviews.clientWidth;
+      scrollAmount += scrollStep;
+      if (scrollAmount > maxScroll) scrollAmount = maxScroll;
+      reviews.style.transform = `translateX(-${scrollAmount}px)`;
+    });
+  });
+  
