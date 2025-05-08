@@ -1,0 +1,23 @@
+:root {
+    --main-green: #0C5E43;
+    --yellow: #FFD655;
+    --light-bg: #E2EEEE;
+    --dark-text: #222;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+  
+  body {
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+  }
+  
