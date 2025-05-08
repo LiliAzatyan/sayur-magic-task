@@ -496,9 +496,9 @@ body {
 
 
 .coffee-container {
-  position: relative;
+  position: absolute;
   width: 100%;
-  height: 500px;
+  height: 900px;
   background-color: #f0f5f2;
   overflow: hidden;
   margin-top: 150px;
@@ -526,13 +526,17 @@ body {
 /* Background floating element */
 .coffee-bg {
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100%; 
   object-fit: cover;
   z-index: 0;
-  opacity: 0.2;
   animation: floatBg 10s infinite ease-in-out;
+}
+
+.section-1-bg.svg {
+  /* position: relative; */
+  margin-top: 40px;
+  height: 300px;
+  margin-left: 30px;
 }
 
 /* Floating left bean */
@@ -552,11 +556,19 @@ body {
   animation-delay: 1s;
 }
 
+.coffe-top-2 {
+  top: 74%;
+  left: 45%;
+  width: 360px;
+  z-index: 1;
+  animation-delay: 1s;
+}
+
 /* Floating right bean */
 .coffee-right {
   top: 40%;
-  right: 5%;
-  width: 40px;
+  right: 10%;
+  width: 240px;
   z-index: 1;
   animation-delay: 2s;
 }
@@ -564,7 +576,7 @@ body {
 /* Regular float animation */
 @keyframes float {
   0% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-20px) rotate(20deg); }
+  50% { transform: translateY(-15px) rotate(15deg); }
   100% { transform: translateY(0px) rotate(0deg); }
 }
 
