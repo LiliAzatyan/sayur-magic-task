@@ -16,8 +16,8 @@
 
       <nav class="site-nav">
         <ul>
-          <li><a href="#products">Our Products</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#products">Our Products</a></li>
           <li><a href="#find">Find Sayur</a></li>
           <li><a href="#reviews">Reviews</a></li>
           <li><a href="#blog">Blog</a></li>
@@ -31,14 +31,17 @@
     <div class="scroll-progress"></div>
   </header>
 
-  <section class="intro-section">
-    <img src="./images/coffee.png" alt="coffee picture" class="coffee-picture">
-    <div class="intro-text">
-      <h1>Instant coffee Sayur</h1>
-      <p class="text-for-coffee">Don't let the name fool you, the Coffee Bar in Lawrence serves more than just coffee. A beautiful and spacious restaurant with an intimate atmosphere, The Coffee Bar is famous for its high quality ingredients and excellent service. This gem in Long Island has become distinguished as the place for great tasting food and decadent desserts that will be sure to satisfy every palate. An emphasis on excellence is instilled by owner Edward Davidov who has always had a strong love and passion for food and hospitality.</p>
-      <p class="text-for-coffee">His true love and aspiration was to open up a kosher dairy restaurant that everyone will enjoy. Edward who is constantly going in and out of the kitchen making sure everything is perfect and up to their standards, is also on the floor welcoming guests.  All of our dishes are made from scratch daily and our portions are generous.</p>
-      <p class="text-for-coffee">Our creative chefs pay attention to the savory and visual details making each dish delicious and tantalizing. We also extend our dining area to the outside with our cozy outdoor seating. It is that dedication and care that leads the Coffee Bar, whether in the morning, afternoon, or evening to be the center of attraction.</p>
-    </div>
+
+  <section id="about" class="section">
+    <section class="intro-section">
+      <img src="./images/coffee.png" alt="coffee picture" class="coffee-picture">
+      <div class="intro-text">
+        <h1>Instant coffee Sayur</h1>
+        <p class="text-for-coffee">Don't let the name fool you, the Coffee Bar in Lawrence serves more than just coffee. A beautiful and spacious restaurant with an intimate atmosphere, The Coffee Bar is famous for its high quality ingredients and excellent service. This gem in Long Island has become distinguished as the place for great tasting food and decadent desserts that will be sure to satisfy every palate. An emphasis on excellence is instilled by owner Edward Davidov who has always had a strong love and passion for food and hospitality.</p>
+        <p class="text-for-coffee">His true love and aspiration was to open up a kosher dairy restaurant that everyone will enjoy. Edward who is constantly going in and out of the kitchen making sure everything is perfect and up to their standards, is also on the floor welcoming guests.  All of our dishes are made from scratch daily and our portions are generous.</p>
+        <p class="text-for-coffee">Our creative chefs pay attention to the savory and visual details making each dish delicious and tantalizing. We also extend our dining area to the outside with our cozy outdoor seating. It is that dedication and care that leads the Coffee Bar, whether in the morning, afternoon, or evening to be the center of attraction.</p>
+      </div>
+    </section>
   </section>
 
   <section id="products" class="section">
@@ -49,9 +52,8 @@
     </div>
   </section>
 
-  <section id="about" class="section"><h2>About</h2><p>About the company...</p></section>
 
-  <section id="find" class="section">
+  <secti  on id="find" class="section">
     <h2 class="section-title">Where you can find Sayur</h2>
     <img src="./images/location.svg" alt="location" style="width: 100%;">
   </section>
@@ -90,8 +92,27 @@
     </div>
   </section>
 
-  <section id="blog" class="section"><h2>Blog</h2><p>Latest news...</p></section>
-  <section id="contacts" class="section"><h2>Contacts</h2><p>Contact details...</p></section>
+  <section id="blog" class="section">
+    <h1 class="section-title">Sayur blog</h1>
+    <div class="cards-container">
+      <div class="card">
+        <img src="./images/sayur1.svg" alt="Coffee 1">
+        <h2 class="card-title">Ninja luxe cafe coffee machine. kev's in depth ...</h2>
+        <p class="card-text">Coffee may help protect against type 2 diabetes. In 2014, researchers who gathered data on over 48,000 people found that those who increased their coffee consumption by at least ...</p>
+      </div>
+      <div class="card">
+        <img src="./images/sayur2.svg" alt="Coffee 2">
+        <h2 class="card-title">How to choose the best coffee machine for any ...</h2>
+        <p class="card-text">Coffee may help protect against type 2 diabetes. In 2014, researchers who gathered data on over 48,000 people found that those who increased their coffee consumption by at least ...</p>
+      </div>
+      <div class="card">
+        <img src="./images/sayur3.svg" alt="Coffee 3">
+        <h2 class="card-title">Rocket appartamento tca home barista espresso ...</h2>
+        <p class="card-text">Coffee may help protect against type 2 diabetes. In 2014, researchers who gathered data on over 48,000 people found that those who increased their coffee consumption by at least ...</p>
+      </div>
+    </div>
+  </section>
+  
 
   <section id="contact" class="section">
     <div class="contact-container">
@@ -113,7 +134,36 @@
     </div>
   </section>
 
-  
+    
+  <section id="contacts" class="section">
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <img src="./images/logo-icon.svg" alt="Sayur Logo" class="contact-logo" />
+        <h2 class="contact-company">INSTANT COFFEE</h2>
+        <p class="contact-follow">Follow us 
+          <span class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-x-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-youtube"></i>
+          </span>
+        </p>
+        <p class="contact-text">+1 (215) 555-1122</p>
+        <p class="contact-text">instant.coffee@gmail.com</p>
+        <p class="contact-text">15 Washington Square. New York, NY 10075, USA</p>
+      </div>
+      <div class="contact-map">
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.857235947379!2d-73.99802448459161!3d40.73123347932838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25990f53930c3%3A0x40d3a2e31672e9c9!2s15%20Washington%20Square%20N%2C%20New%20York%2C%20NY%2010003%2C%20USA!5e0!3m2!1sen!2sus!4v1642629599494!5m2!1sen!2sus" 
+        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+      </div>
+    </div>
+    <footer class="contact-footer">
+      <span>© instant coffee 2024</span>
+      <span>Website development ASTUDIO LLC</span>
+    </footer>
+  </section>
 
   <script src="scripts/main.js"></script>
 </body>
