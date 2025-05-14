@@ -1,0 +1,65 @@
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--main-green);
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.site-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.site-nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.site-nav a:hover {
+  opacity: 0.8;
+}
+
+.cta-btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 8px 16px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.3s;
+  margin-left: 20px;
+}
+
+.cta-btn:hover {
+  background-color: #fff;
+  color: var(--main-green);
+}
+
+.scroll-progress {
+  height: 4px;
+  background-color: var(--yellow);
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.2s ease-out;
+}

@@ -1,0 +1,82 @@
+.coffee-container {
+  width: 100%;
+  height: 900px;
+  background-color: #f0f5f2;
+  overflow: hidden;
+  margin-top: 150px;
+}
+
+.cup {
+  position: absolute;
+  bottom: 0;
+}
+
+.cup3 {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 100%;
+}
+
+.bean {
+  position: absolute;
+  animation: float 6s infinite ease-in-out;
+}
+
+.coffee-bg {
+  top: 0;
+  width: 100%; 
+  object-fit: cover;
+  z-index: 0;
+  animation: floatBg 10s infinite ease-in-out;
+}
+
+.section-1-bg.svg {
+  margin-top: 40px;
+  height: 300px;
+  margin-left: 30px;
+}
+
+.coffee-left {
+  top: 20%;
+  left: 15%;
+  width: 140px;
+  z-index: 1;
+  animation-delay: 1s;
+}
+
+.coffee-left-2 {
+  top: 70%;
+  left: 5%;
+  width: 140px;
+  z-index: 1;
+  animation-delay: 1s;
+}
+
+.coffe-top-2 {
+  top: 74%;
+  left: 45%;
+  width: 360px;
+  z-index: 1;
+  animation-delay: 1s;
+}
+
+.coffee-right {
+  top: 40%;
+  right: 10%;
+  width: 240px;
+  z-index: 1;
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(15deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes floatBg {
+  0% { transform: scale(1) translateY(0px); }
+  50% { transform: scale(1.02) translateY(-10px); }
+  100% { transform: scale(1) translateY(0px); }
+}
